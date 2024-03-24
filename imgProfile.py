@@ -12,18 +12,17 @@ def get_random_image_from_folder(folder_path):
     return os.path.join(folder_path, random.choice(image_files))
 
 if __name__ == "__main__":
-    # Ruta de la carpeta que contiene las imágenes
-    folder_path = "C:\\Users\\gerso\\OneDrive\\Pictures\\some"
+   
+    folder_path = "C:\\Users\\username\\OneDrive\\Pictures\\somePictures"
 
-    # Intervalo de cambio de fondo de pantalla (en segundos)
-    change_interval = 2 * 60  # 10 minutos
+ 
+    change_interval = 10 * 60  
 
     while True:
-        # Obtener una imagen aleatoria de la carpeta
+      
         random_image = get_random_image_from_folder(folder_path)
 
-        # Cambiar el fondo de pantalla
+       
         change_wallpaper(random_image)
 
-        # Esperar hasta el siguiente cambio
         time.sleep(change_interval)
